@@ -34,6 +34,7 @@ def main():
             time.sleep(86400)
         except:
             print("You did not put the creditials in Bitcoin.py")
+            break
 
 
 if __name__ == "__main__":
