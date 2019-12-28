@@ -27,10 +27,13 @@ def main():
             to="Your number"
         )
     while True:
-        send_sms()
-        print("Sms sent!")
-        print("Sleeping for 24hrs.. ")
-        time.sleep(86400)
+        try:
+            send_sms()
+            print("Sms sent!")
+            print("Sleeping for 24hrs.. ")
+            time.sleep(86400)
+        except:
+            print("You did not put the creditials in Bitcoin.py")
 
 
 if __name__ == "__main__":
